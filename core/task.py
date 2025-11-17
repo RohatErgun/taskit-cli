@@ -1,5 +1,3 @@
-#
-
 class Task:
     def __init__(self, title, description, due_date=None, tag=None, status="pending"):
         self.title = title
@@ -10,4 +8,3 @@ class Task:
 
     def __repr__(self):
         return f"<Task:{self.title}, status={self.status}"
-
