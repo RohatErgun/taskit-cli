@@ -14,7 +14,7 @@ class LogSystem:
             now = datetime.now()
             values = function(*args, **kwargs)
 
-            with open('logfile.tx', 'a+') as f:
+            with open('logfile.txt', 'a+') as f:
                 fun_name = function.__name__
                 timestamp = now.day, now.month, now.year
                 f.write(f"\nUser used: <{fun_name}> function has returned with:\t{values}\ttimestamp:{timestamp}")
