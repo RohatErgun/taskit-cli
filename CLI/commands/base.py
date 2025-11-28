@@ -11,5 +11,5 @@ class Command:
     def add_arguments(self, parser):
         pass
 
-    def handle(self, args, service):
+    def handle(self, args=None, service=None):
         raise NotImplementedError
